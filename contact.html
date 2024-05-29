@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widh, inisital-scale=1">
+        <title>Contact</title>
+        <link href="./resources/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main id="contactform">
+            <form action="./submittion.html" method="post">
+                <!-- action attribute determines where the form’s information goes. -->
+                <h1>Contact</h1>
+                <section class="subject">
+                    <label for="subject">
+                        Subject
+                    </label>
+                    <br>
+                    <br>
+                    <input type="text" name="subject" id="subject" required>
+                </section>
+
+                <section class="message">
+                    <label for="message">Message</label>
+                    <br>
+                    <br>
+                    <textarea id="message" name="message" rows="10" cols="50" required>
+                    </textarea>
+                </section>
+
+                <section class="name">
+                    <label for="name">Name</label>
+                    <br>
+                    <br>
+                    <input type="text" name="text" id="text" required>
+                </section>
+
+                <section class="email">
+                    <label for="email">
+                        Email
+                    </label>
+                    <br>
+                    <div id="notice">please make sure your email address is entered correctly</div>  
+                    <br>
+                    <input type="email" name="email" id="email" required>
+                </section>
+
+                <section id="submittion">
+                    <input type="submit" name="submit" value="Submit">
+                </section>
+
+            </form>
+
+        </main>
+    </body>
+
+</html>

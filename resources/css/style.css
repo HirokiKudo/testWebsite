@@ -1,0 +1,392 @@
+html {
+    font-size: 16px;
+    /* font-family: Georgia ;  */
+    /* font-family: 'Times New Roman';  */
+    /* font-family: serif;*/
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal; */
+
+    padding: 0;
+}
+
+/* Navigation bar */
+
+#side-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    border-right-width: 30px;
+    /* background-color: aqua; */
+    position: fixed;
+    z-index: 2;
+    padding-left: 20px;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2.0rem;
+    padding-top: 2rem;
+    letter-spacing: .2rem;
+    /* color: #216517; */
+    /* opacity: 0.8; */
+}
+
+ul {
+    list-style: none;
+}
+
+.mainmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.mainmenu li {
+    display: block;
+    font-size: 1.4rem;
+    /* padding: 30px; */
+    letter-spacing: 0.5rem;
+    /* color: #216517; */
+    opacity: 0.8;
+    text-align: center;
+}
+
+.mainmenu-item li {
+    position: relative;
+}
+
+a.mainmenu-item {
+    display: block;
+    padding: 30px 50px;
+}
+
+/* sub menu */
+
+ul.submenu {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    padding: 10px 20px;
+    z-index: 9999;
+}
+
+li.mainmenu-item:hover  ul.submenu {
+    display: block;
+
+}
+
+.submenu li {
+    display: block;
+    font-size: 0.9rem;
+    padding: 10px;
+    letter-spacing: 0.5rem;
+    /* color: #216517; */
+    opacity: 0.8;
+    text-align: center;
+    background-color: white;
+}
+
+/* social media icon */
+#icon-container {
+    padding-top: 160px;
+}
+
+#icon-container img{
+    height: 30px;
+    width: 30px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    font-size: 1.2rem;
+}
+
+/* for main logo */
+#logo-link:link {
+    text-decoration: none;
+}
+
+#logo-link:visited {
+    text-decoration: none;
+}
+
+#logo-link:hover{
+    text-decoration: none;
+}
+
+#logo-link:active {
+    text-decoration: none;
+}
+
+/* Home page */
+/* コンテンツを表示させるエリア */
+.frame-container {
+    display: flex;
+    height: 95vh;
+    width: 95vw;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+iframe {
+    height: 100%;
+    width: 75%;
+    border: 0;
+    padding: 0;
+    top: 0;
+    /* background-color: aquamarine; */
+}
+
+/* Top : main picture */
+
+#top-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+#top-img-container img {
+    height: 70%;
+    width: 70%;
+    padding-top: 5rem;
+}
+
+/* About page */
+
+#port-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#port-image-container img{
+    height: 180px;
+    width: 180px;
+}
+
+#bio-content {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    margin-top: 5rem;
+}
+
+#bio-content p {
+    text-align: left;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Contact */
+.subject, .message, .name, .email {
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding: 1rem;
+}
+
+#contactform h1 {
+    text-align: center;
+}
+
+#contactform label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    border-color: black;
+    border-style: groove;
+    opacity: 0.5;
+}
+
+#notice {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    padding-top:0.5rem;
+}
+
+#submittion{
+    width: 20%;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+/* submittion */
+#thankyou-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thankyou-container p {
+    padding-top: 10rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Gallery */
+/* .layer {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+} */
+
+.image-captures {
+    display: flex;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.image-captures img {
+    height: 9rem;
+    width: 9rem;;
+    margin-bottom: 2rem;
+}
+
+.texture-main {
+    display: inline-flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.images-container {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container{
+    margin: 0;
+}
+
+/* .original {
+    display: none;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    background-color: rgb(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+} */
+
+/* .original .image-container {
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1rem 1rem 1rem 1rem gray;
+} */
+
+/* .original .image-container img {
+    height: 20rem;
+    width: 20rem;
+} */
+
+/* .origin {
+    position: absolute;
+    top: 400px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* .origin button {
+    background: white;
+    border: none;
+    cursor: pointer;
+} */
+
+.texture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.texture-main .image-container img {
+    height: 25rem;
+    width: 25rem;
+    padding: 0 25px;
+    margin: 0px 0 30px 0;
+}
+
+.texture-main p{
+    height: 20px;
+    width: 10px;
+    margin:0;
+    /* right: 0; */
+}
+
+.texture .image-container img {
+    height: 9rem;
+    width: 9rem;
+    padding: 0 10px;
+    margin: 0px 0 15px 0;
+}
+
+figure {
+    margin:0;
+}
